@@ -1,6 +1,6 @@
 ---
 name: add-itinerary
-description: Add a UIS Track weekly itinerary or a work-shift schedule (screenshot or text) to Google Calendar. Use when the user sends either and says "add these".
+description: Add a UIS Track weekly itinerary or a work-shift schedule (screenshot or text) to Google Calendar. Use whenever the user sends a screenshot or text of a schedule, itinerary or shifts, even with no words or instructions attached. Never wait for "add these".
 ---
 
 # Add weekly itinerary to Google Calendar
