@@ -1,0 +1,4 @@
+*.csv
+*.fit
+*.zip
+__pycache__/
