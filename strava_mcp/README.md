@@ -1,3 +1,10 @@
+> # ⚠️ NOT WORKING: REQUIRES A PAID STRAVA SUBSCRIPTION
+> Strava only lets subscribers create API apps, so this server **cannot get credentials** and is **not hooked up**.
+> It is kept only in case a subscription happens later. Looking for a workaround (Garmin Connect, CSV export). Do NOT treat Strava as available.
+>
+> To re-enable later: subscribe, finish the setup below, and re-add the `strava` entry to `.mcp.json`:
+> `{"mcpServers":{"strava":{"command":"uv","args":["run","--no-project","--with","mcp<2","--with","requests","python","strava_mcp/server.py"]}}}`
+
 # Strava MCP (free API, no premium)
 
 Tools: `get_athlete`, `list_activities`, `get_activity`, `create_activity`, `update_activity`, `summarize_activities`.
@@ -14,4 +21,4 @@ Tools: `get_athlete`, `list_activities`, `get_activity`, `create_activity`, `upd
 
 ## Notes
 - Strava may rotate the refresh token. The server stores the newest one in `~/.strava_refresh_token` and falls back to the env var. If a later session says auth failed, rerun `authorize.py` and update `STRAVA_REFRESH_TOKEN`.
-- Pinned to `mcp<2` (v1 API) via `.mcp.json`.
+- Pinned to `mcp<2` (v1 API); see the `.mcp.json` snippet at the top.

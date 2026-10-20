@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "strava": {
-      "command": "uv",
-      "args": ["run", "--no-project", "--with", "mcp<2", "--with", "requests", "python", "strava_mcp/server.py"]
-    }
-  }
-}
